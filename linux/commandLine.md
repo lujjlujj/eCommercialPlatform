@@ -10,8 +10,8 @@ kill -3
 find /f -exec grep -H "TMOUT" {} \; | less;
 
 ## Grep response time from access.log
-less access_log.secure.xxxxx | awk '$20 !~/xsd$/'| awk '$20>2000000' | less
-less access_log.secure.xxxxx | awk '$20 !~/xsd$/'| awk '$20>2000000' | less | wc -l
+"less access_log.secure.xxxxx | awk '$20 !~/xsd$/'| awk '$20>2000000' | less"
+"less access_log.secure.xxxxx | awk '$20 !~/xsd$/'| awk '$20>2000000' | less | wc -l"
 
 ## Find File & Folder
 Find is a very strong command to search for files and folders. You can search for files based on certain criteria besides filename, such as file types, atime, belongs to which groups, file modes, etc. Because find command support a lots of options, therefore sometimes find command line looks very complicated, but actually it is not. Don’t let the lengthy find command lines scares you away, find can be very easy to use.
