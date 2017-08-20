@@ -1,1 +1,19 @@
+## Library for dummy data
+<dependency>
+  <groupId>com.github.javafaker</groupId>
+  <artifactId>javafaker</artifactId>
+  <version>0.12</version>
+</dependency>
+<dependency>
+  <groupId>io.codearte.jfairy</groupId>
+  <artifactId>jfairy</artifactId>
+  <version>0.5.6</version>
+</dependency>
 
+## Linux Java
+vi ~/.bash_profile
+Set JAVA_HOME as follows using syntax export JAVA_HOME=<path-to-java>. If your path is set xxx/jdk/bin/java, set it fllows:
+export JAVA_HOME=xxx/jdk/bin/java
+Set PATH as follows
+export PATH=$PATH:/xxx/jdk/bin
+source ~/.bash_profile
