@@ -1,4 +1,4 @@
-##Maven Plugin to generate BO with wsdl
+## Maven Plugin to generate BO with wsdl
 <build>
   <plugins>
     <plugin>
@@ -56,3 +56,7 @@
      </plugins>
  </build>
  
+## Web Serivces Trace Log
+WLE.wle_inbnd_ws=all:
+WLE.wle_outbnd_Ws=all
+com.ibm.ws.websvcs.trace.*=all
