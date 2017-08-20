@@ -1,19 +1,19 @@
-#Command Line
+# Command Line
 
-##Generate heapdump
+## Generate heapdump
 sudo /sys1/proclib/stdbuild/bpm80/heapdump.sh [processId]
 
-##Generate Java Core
+## Generate Java Core
 kill -3
 
-##Find Keyword in System File
+## Find Keyword in System File
 find /f -exec grep -H "TMOUT" {} \; | less;
 
-##Grep response time from access.log
+## Grep response time from access.log
 less access_log.secure.xxxxx | awk '$20 !~/xsd$/'| awk '$20>2000000' | less
 less access_log.secure.xxxxx | awk '$20 !~/xsd$/'| awk '$20>2000000' | less | wc -l
 
-##Find File & Folder
+## Find File & Folder
 Find is a very strong command to search for files and folders. You can search for files based on certain criteria besides filename, such as file types, atime, belongs to which groups, file modes, etc. Because find command support a lots of options, therefore sometimes find command line looks very complicated, but actually it is not. Don’t let the lengthy find command lines scares you away, find can be very easy to use.
 You just need to ask yourself 3 question?
 1. What is the path you want to begin your search from? current directory.
@@ -34,10 +34,10 @@ Do you want more? I want to find all my documents with extension .pdf and .chm, 
 With using -or, you can specify your more than one keywords as file name. This is very useful, we usually execute find twice for different keywords, actually we can do this in one line.
 Do you have any interesting find tips to share with us?
 
-##Execute Command Line in backend
+## Execute Command Line in backend
 nohup + xxxx + &
 
-##Unzip File
+## Unzip File
 *Here is an example of how to extract the contents of a gzip file
     gzip -d file.gz
 
@@ -47,8 +47,15 @@ nohup + xxxx + &
 *Here is an example to how to tar the orginal file
     tar cvf target orignal
 
-##Get PC Info
+## Get PC Info
 uname -a
 
-##Set Proxy
+## Set Proxy
 export http_proxy=http://Username:Password@hostname:port/
+
+## Import Key into SSH
+ssh-add ~/.ssh/id_rsa
+your identification has been saved in .ssh/id_rsa
+your public key has been saved in .ssh/id_rsa.pub
+
+cat /tmp/PublicKey.txt>>.ssh/authorized_keys
