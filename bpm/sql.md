@@ -1,4 +1,4 @@
-##Search Snapshot
+## Search Snapshot
 Select proc.app,
        proc.SNAPSHOT,
        proc.name,
@@ -41,7 +41,7 @@ From (Select pj.anme      as app,
        AND proc.process_id = proc_item.process_id
   ORDER BY proc.app, proc.SNAPSHOT;
 
-##SQL to check the task lost issue
+## SQL to check the task lost issue
 select * from lsw_bdp_instance bpd where bpd.execution_status = 1
 and
 (select count(*) from lsw_task lt where lt.BPD_INSTANCE_ID = bpd.BPD_INSTANCE_ID and close_datetime is null) = 0
